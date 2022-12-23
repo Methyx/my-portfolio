@@ -39,6 +39,7 @@
   display: flex;
   margin: 20px 0;
   border-top: 1px solid var(--darkgreen);
+  border-bottom: 1px solid var(--darkgreen);
   border-radius: 20%;
 }
 .home-page section .description {

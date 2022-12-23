@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import MyAvatarStanding from "../components/MyAvatarStanding";
 import MyAvatarApplause from "../components/MyAvatarApplause";
 import MyAvatarWaving from "../components/MyAvatarWaving";
+import MyAvatarTwisting from "../components/MyAvatarTwisting";
 
 const MyAvatar = ({ component, position, rotation }) => {
   return (
@@ -19,14 +20,14 @@ const MyAvatar = ({ component, position, rotation }) => {
       />
       <OrbitControls enableZoom={false} />
       <Suspense fallback={null}>
-        {component === "MyAvatarStanding" ? (
-          <MyAvatarStanding position={position} rotation={rotation} />
+        {component === "MyAvatarTwisting" ? (
+          <MyAvatarTwisting position={position} rotation={rotation} />
         ) : component === "MyAvatarWaving" ? (
           <MyAvatarWaving position={position} rotation={rotation} />
+        ) : component === "MyAvatarApplause" ? (
+          <MyAvatarApplause position={position} rotation={rotation} />
         ) : (
-          component === "MyAvatarApplause" && (
-            <MyAvatarApplause position={position} rotation={rotation} />
-          )
+          <MyAvatarStanding position={position} rotation={rotation} />
         )}
       </Suspense>
     </Canvas>

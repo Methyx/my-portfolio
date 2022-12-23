@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 // component
 import Jukebox from "../components/Jukebox";
 import MyAvatar from "../components/MyAvatar";
@@ -6,11 +8,13 @@ import MyAvatar from "../components/MyAvatar";
 import "../style/home.css";
 
 const Home = () => {
+  //UseStates
+  const [avatarAnimation, setAvatarAnimation] = useState("MyAvatarWaving");
+
   return (
     <div className="home-page container">
       <div className="title">
         <h1>Philippe MERCY</h1>
-
         <h2>Ingénieur Commercial et Marketing Confirmé</h2>
         <h2>Développeur Web full-stack Junior</h2>
         <div className="icons">
@@ -25,10 +29,18 @@ const Home = () => {
           <img src={require("../assets/img/mongodb.png")} alt="MongoDB" />
         </div>
       </div>
-      <section className="cv-section">
+      <section
+        className="cv-section"
+        onMouseEnter={() => {
+          setAvatarAnimation("MyAvatarTwisting");
+        }}
+        onMouseLeave={() => {
+          setAvatarAnimation("MyAvatarWaving");
+        }}
+      >
         <div className="avatar">
           <MyAvatar
-            component="MyAvatarWaving"
+            component={avatarAnimation}
             position={[0, -1, 0]}
             rotation={[0, 0.3, 0]}
           />

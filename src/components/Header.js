@@ -21,9 +21,19 @@ const Header = () => {
         <Link to="/Portfolio">mon Portfolio</Link>
       </div>
       <div className="right">
-        <img src={require("../assets/img/github.png")} alt="github" />
-        <img src={require("../assets/img/linkedin.png")} alt="linkedin" />
-        <img src={require("../assets/img/mail.jpg")} alt="mail" />
+        <a href="https://github.com/Methyx" target="_blank" rel="noreferrer">
+          <img src={require("../assets/img/github-mark.png")} alt="github" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/philippe-mercy-973697180/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={require("../assets/img/linkedin.png")} alt="linkedin" />
+        </a>
+        <a href="mailto:philippe.mercy@free.fr">
+          <img src={require("../assets/img/mail-icon.png")} alt="mail" />
+        </a>
       </div>
     </header>
   );
