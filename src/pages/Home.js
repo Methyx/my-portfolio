@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 // component
-import Jukebox from "../components/Jukebox";
 import MyAvatar from "../components/MyAvatar";
 
 // style
@@ -9,13 +8,19 @@ import "../style/home.css";
 
 const Home = () => {
   //UseStates
-  const [avatarAnimation, setAvatarAnimation] = useState("MyAvatarWaving");
+  const [avatarAnimation1, setAvatarAnimation1] = useState("MyAvatarWaving");
+  const [avatarAnimation2, setAvatarAnimation2] = useState(
+    "MyAvatarLookingAround"
+  );
+  const [cvHighlight, setCvHighlight] = useState(false);
+  const [portfolioHighlight, setPortfolioHighlight] = useState(false);
 
   return (
     <div className="home-page container">
       <div className="title">
         <h1>Philippe MERCY</h1>
-        <h2>Ingénieur Commercial et Marketing Confirmé</h2>
+        <h2>Ingénieur INSA en Automatique</h2>
+        <h3>30 ans d'expérience de relation client</h3>
         <h2>Développeur Web full-stack Junior</h2>
         <div className="icons">
           <img src={require("../assets/img/html.png")} alt="HTML" />
@@ -32,25 +37,51 @@ const Home = () => {
       <section
         className="cv-section"
         onMouseEnter={() => {
-          setAvatarAnimation("MyAvatarTwisting");
+          setAvatarAnimation1("MyAvatarTwisting");
+          setCvHighlight(true);
         }}
         onMouseLeave={() => {
-          setAvatarAnimation("MyAvatarWaving");
+          setAvatarAnimation1("MyAvatarWaving");
+          setCvHighlight(false);
         }}
       >
         <div className="avatar">
           <MyAvatar
-            component={avatarAnimation}
+            component={avatarAnimation1}
             position={[0, -1, 0]}
             rotation={[0, 0.3, 0]}
           />
         </div>
-        <div className="description">Découvrir mon parcours</div>
+        <div className={cvHighlight ? "description highlight" : "description"}>
+          Découvrir mon parcours
+        </div>
+        <div className="space"></div>
       </section>
-      <section className="portfolio-section">
-        <div className="description">Le Jukebox de mon Portfolio</div>
-        <div className="jukebox">
-          <Jukebox />
+      <section
+        className="portfolio-section"
+        onMouseEnter={() => {
+          setAvatarAnimation2("MyAvatarShuffling");
+          setPortfolioHighlight(true);
+        }}
+        onMouseLeave={() => {
+          setAvatarAnimation2("MyAvatarLookingAround");
+          setPortfolioHighlight(false);
+        }}
+      >
+        <div className="space"></div>
+        <div
+          className={
+            portfolioHighlight ? "description highlight" : "description"
+          }
+        >
+          Voir mon Portfolio
+        </div>
+        <div className="avatar">
+          <MyAvatar
+            component={avatarAnimation2}
+            position={[0, -1, 0]}
+            rotation={[0, -1.8, 0]}
+          />
         </div>
       </section>
     </div>

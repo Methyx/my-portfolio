@@ -7,6 +7,8 @@ import MyAvatarStanding from "../components/MyAvatarStanding";
 import MyAvatarApplause from "../components/MyAvatarApplause";
 import MyAvatarWaving from "../components/MyAvatarWaving";
 import MyAvatarTwisting from "../components/MyAvatarTwisting";
+import MyAvatarLookingAround from "../components/MyAvatarLookingAround";
+import MyAvatarShuffling from "../components/MyAvatarShuffling";
 
 const MyAvatar = ({ component, position, rotation }) => {
   return (
@@ -26,8 +28,14 @@ const MyAvatar = ({ component, position, rotation }) => {
           <MyAvatarWaving position={position} rotation={rotation} />
         ) : component === "MyAvatarApplause" ? (
           <MyAvatarApplause position={position} rotation={rotation} />
-        ) : (
+        ) : component === "MyAvatarStanding" ? (
           <MyAvatarStanding position={position} rotation={rotation} />
+        ) : component === "MyAvatarShuffling" ? (
+          <MyAvatarShuffling position={position} rotation={rotation} />
+        ) : component === "MyAvatarLookingAround" ? (
+          <MyAvatarLookingAround position={position} rotation={rotation} />
+        ) : (
+          <div></div>
         )}
       </Suspense>
     </Canvas>
