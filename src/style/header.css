@@ -4,12 +4,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 15px;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid var(--violet);
+  border-radius: 15px;
 }
 header .left {
   display: flex;
   align-items: center;
   gap: 50px;
-  padding: 0 15px;
   font-size: 20px;
 }
 header .left img {
@@ -23,10 +27,21 @@ header .left img:hover {
 header .left a {
   text-decoration: none;
   font-weight: bold;
-  color: var(--darkgreen);
+  color: var(--violet);
+  padding: 10px;
+}
+header .left a:hover {
+  background-color: var(--lightgreen);
+  border-radius: 10px;
 }
 
 header .right img {
   height: 40px;
-  margin: 0 20px;
+  margin: 0 10px;
+  padding: 10px;
+}
+header .right img:hover {
+  background-color: var(--lightgreen);
+  border-radius: 30%;
+  color: white;
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // component
 import MyAvatar from "../components/MyAvatar";
@@ -7,7 +8,9 @@ import MyAvatar from "../components/MyAvatar";
 import "../style/home.css";
 
 const Home = () => {
-  //UseStates
+  // init
+  const navigate = useNavigate();
+  // UseStates
   const [avatarAnimation1, setAvatarAnimation1] = useState("MyAvatarWaving");
   const [avatarAnimation2, setAvatarAnimation2] = useState(
     "MyAvatarLookingAround"
@@ -21,7 +24,7 @@ const Home = () => {
         <h1>Philippe MERCY</h1>
         <h2>Ingénieur INSA en Automatique</h2>
         <h3>30 ans d'expérience de relation client</h3>
-        <h2>Développeur Web full-stack Junior</h2>
+        <h2>Développeur Full-Stack JavaScript Junior</h2>
         <div className="icons">
           <img src={require("../assets/img/html.png")} alt="HTML" />
           <img src={require("../assets/img/css.png")} alt="CSS" />
@@ -34,6 +37,13 @@ const Home = () => {
           <img src={require("../assets/img/mongodb.png")} alt="MongoDB" />
         </div>
       </div>
+      <div className="resume">
+        <p>
+          Au travers de mes 30 ans d'expériences commerciales, marketing et de
+          gestion de projets, j'ai acquis un sens aigu de la compréhension et de
+          la satisfaction du besoin des "clients" (au sens large).
+        </p>
+      </div>
       <section
         className="cv-section"
         onMouseEnter={() => {
@@ -43,6 +53,9 @@ const Home = () => {
         onMouseLeave={() => {
           setAvatarAnimation1("MyAvatarWaving");
           setCvHighlight(false);
+        }}
+        onClick={() => {
+          navigate("/pageCV");
         }}
       >
         <div className="avatar">

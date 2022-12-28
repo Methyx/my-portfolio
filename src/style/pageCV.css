@@ -1,0 +1,52 @@
+.pageCV {
+  padding: 30px 15px;
+  border-radius: 15px;
+}
+.pageCV section {
+  margin: 40px 0;
+  padding: 20px 50px;
+  border-top: 1px solid var(--darkgreen);
+  border-bottom: 1px solid var(--darkgreen);
+  border-radius: 20%;
+}
+
+.pageCV section .title {
+  display: flex;
+  gap: 50px;
+  padding-left: 20px;
+  line-height: 35px;
+  color: var(--violet);
+}
+.pageCV section .title:hover {
+  cursor: pointer;
+}
+.pageCV section .title h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.pageCV section .hidden {
+  display: none;
+}
+
+.pageCV section .contain .item {
+  margin: 25px 35px;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  width: 100%;
+}
+.pageCV section .contain .item h2 {
+  font-weight: 600;
+}
+.pageCV section .contain .item .logo {
+  width: 30%;
+}
+.pageCV section .contain .item .content {
+  width: 70%;
+}
+.pageCV section .contain .item .logo img {
+  width: 180px;
+  height: 70%;
+  object-fit: contain;
+}

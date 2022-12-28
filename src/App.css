@@ -9,12 +9,12 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(230, 230, 230);
-  /* background-color: var(--lightbrown); */
+  background-color: var(--violet);
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
-  /* background-color: var(--lightbrown); */
+  /* background-color: rgb(230, 230, 230); */
+  background-color: white;
 }

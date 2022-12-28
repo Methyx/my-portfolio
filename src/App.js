@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/PageCV" element={<PageCV />} />
+        <Route path="/pageCV" element={<PageCV />} />
         <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </Router>

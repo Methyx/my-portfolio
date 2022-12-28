@@ -17,8 +17,8 @@ const Header = () => {
           }}
           alt="avatar Philippe MERCY"
         />
-        <Link to="/PageCV">mon CV</Link>
-        <Link to="/Portfolio">mon Portfolio</Link>
+        <Link to="/pageCV">mon CV</Link>
+        <Link to="/portfolio">mon Portfolio</Link>
       </div>
       <div className="right">
         <a href="https://github.com/Methyx" target="_blank" rel="noreferrer">
