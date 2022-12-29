@@ -1,0 +1,51 @@
+.sectionCV {
+  margin: 40px 0;
+  padding: 20px 50px;
+  border-top: 1px solid var(--darkgreen);
+  border-bottom: 1px solid var(--darkgreen);
+  border-radius: 20%;
+}
+
+.sectionCV .title {
+  display: flex;
+  gap: 50px;
+  padding-left: 40px;
+  line-height: 35px;
+  color: var(--violet);
+  font-size: 24px;
+}
+.sectionCV .title:hover {
+  cursor: pointer;
+}
+.sectionCV .title h1 {
+  font-weight: bold;
+}
+
+.sectionCV .hidden {
+  display: none;
+}
+
+.sectionCV .item {
+  margin: 25px 55px;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  width: 100%;
+}
+.sectionCV .item h2 {
+  font-weight: 600;
+}
+.sectionCV .item .logo {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.sectionCV .item .content {
+  width: calc(70% - 55px);
+}
+.sectionCV .item .logo img {
+  width: 180px;
+  height: 100%;
+  object-fit: contain;
+}

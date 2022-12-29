@@ -21,20 +21,28 @@ const Home = () => {
   return (
     <div className="home-page container">
       <div className="title">
-        <h1>Philippe MERCY</h1>
-        <h2>Ingénieur INSA en Automatique</h2>
-        <h3>30 ans d'expérience de relation client</h3>
-        <h2>Développeur Full-Stack JavaScript Junior</h2>
-        <div className="icons">
-          <img src={require("../assets/img/html.png")} alt="HTML" />
-          <img src={require("../assets/img/css.png")} alt="CSS" />
-          <img src={require("../assets/img/javascript.png")} alt="javascript" />
-          <img src={require("../assets/img/react.png")} alt="REACT" />
-          <div className="react">
-            <p>React</p>
-            <p>React Native</p>
+        <div className="photo">
+          <img src={require("../assets/img/PM.jpg")} alt="Philippe MERCY" />
+        </div>
+        <div className="text">
+          <h1>Philippe MERCY</h1>
+          <h2>Ingénieur INSA en Automatique</h2>
+          <h3>30 ans d'expérience de relation client</h3>
+          <h2>Développeur Full-Stack JavaScript Junior</h2>
+          <div className="icons">
+            <img src={require("../assets/img/html.png")} alt="HTML" />
+            <img src={require("../assets/img/css.png")} alt="CSS" />
+            <img
+              src={require("../assets/img/javascript.png")}
+              alt="javascript"
+            />
+            <img src={require("../assets/img/react.png")} alt="REACT" />
+            <div className="react">
+              <p>React</p>
+              <p>React Native</p>
+            </div>
+            <img src={require("../assets/img/mongodb.png")} alt="MongoDB" />
           </div>
-          <img src={require("../assets/img/mongodb.png")} alt="MongoDB" />
         </div>
       </div>
       <div className="resume">

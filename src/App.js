@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// style
 import "./App.css";
 
 // pages
@@ -8,6 +10,14 @@ import Portfolio from "./pages/Portfolio";
 
 // components
 import Header from "./components/Header";
+
+// FontAwesome
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faCircleArrowDown,
+  faCircleArrowUp,
+} from "@fortawesome/free-solid-svg-icons";
+library.add(faCircleArrowDown, faCircleArrowUp);
 
 function App() {
   return (
