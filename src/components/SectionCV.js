@@ -34,7 +34,7 @@ const SectionCV = ({ sectionTitle, itemsArray }) => {
                 <img src={item.logo} alt={item.logoAlt} />
               </div>
               <div className="content">
-                <p>{item.localisation}</p>
+                <h3>{item.localisation}</h3>
                 <h2>{item.title}</h2>
                 <p>{item.description}</p>
               </div>

@@ -35,6 +35,9 @@
 .sectionCV .item h2 {
   font-weight: 600;
 }
+.sectionCV .item p {
+  font-weight: 300;
+}
 .sectionCV .item .logo {
   width: 30%;
   height: 100%;
@@ -48,4 +51,7 @@
   width: 180px;
   height: 100%;
   object-fit: contain;
+}
+.sectionCV .item a {
+  color: var(--violet);
 }

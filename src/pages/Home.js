@@ -105,6 +105,7 @@ const Home = () => {
           />
         </div>
       </section>
+      <br />
     </div>
   );
 };
