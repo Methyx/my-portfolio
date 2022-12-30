@@ -3,16 +3,18 @@ import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 
 // component
-import MyAvatarStanding from "../components/MyAvatarStanding";
-import MyAvatarApplause from "../components/MyAvatarApplause";
-import MyAvatarWaving from "../components/MyAvatarWaving";
-import MyAvatarTwisting from "../components/MyAvatarTwisting";
-import MyAvatarLookingAround from "../components/MyAvatarLookingAround";
-import MyAvatarShuffling from "../components/MyAvatarShuffling";
+import MyAvatarStanding from "../components/avatar-animations/MyAvatarStanding";
+import MyAvatarApplause from "../components/avatar-animations/MyAvatarApplause";
+import MyAvatarWaving from "../components/avatar-animations/MyAvatarWaving";
+import MyAvatarTwisting from "../components/avatar-animations/MyAvatarTwisting";
+import MyAvatarLookingAround from "../components/avatar-animations/MyAvatarLookingAround";
+import MyAvatarShuffling from "../components/avatar-animations/MyAvatarShuffling";
+import MyAvatarBicycle from "../components/avatar-animations/MyAvatarBicycle";
+import MyAvatarWriting from "../components/avatar-animations/MyAvatarWriting";
 
-const MyAvatar = ({ component, position, rotation }) => {
+const MyAvatar = ({ component, position, rotation, fov }) => {
   return (
-    <Canvas camera={{ position: [-30, 10, 40], fov: 3.5 }}>
+    <Canvas camera={{ position: [-30, 10, 40], fov: fov }}>
       <ambientLight intensity={0.8} />
       <directionalLight
         position={[-2, 10, 2]}
@@ -34,6 +36,10 @@ const MyAvatar = ({ component, position, rotation }) => {
           <MyAvatarShuffling position={position} rotation={rotation} />
         ) : component === "MyAvatarLookingAround" ? (
           <MyAvatarLookingAround position={position} rotation={rotation} />
+        ) : component === "MyAvatarBicycle" ? (
+          <MyAvatarBicycle position={position} rotation={rotation} />
+        ) : component === "MyAvatarWriting" ? (
+          <MyAvatarWriting position={position} rotation={rotation} />
         ) : (
           <div></div>
         )}

@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 import meth from "../assets/img/Meth.png";
 
@@ -7,6 +7,7 @@ import "../style/header.css";
 
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation().pathname;
   return (
     <header className="container">
       <div className="left">
@@ -17,8 +18,18 @@ const Header = () => {
           }}
           alt="avatar Philippe MERCY"
         />
-        <Link to="/pageCV">mon CV</Link>
-        <Link to="/portfolio">mon Portfolio</Link>
+        <Link
+          to="/pageCV"
+          className={location === "/pageCV" ? "underlined" : null}
+        >
+          mon CV
+        </Link>
+        <Link
+          to="/portfolio"
+          className={location === "/portfolio" ? "underlined" : null}
+        >
+          mon Portfolio
+        </Link>
       </div>
       <div className="right">
         <a href="https://github.com/Methyx" target="_blank" rel="noreferrer">

@@ -71,6 +71,7 @@ const Home = () => {
             component={avatarAnimation1}
             position={[0, -1, 0]}
             rotation={[0, 0.3, 0]}
+            fov={3.5}
           />
         </div>
         <div className={cvHighlight ? "description highlight" : "description"}>
@@ -102,6 +103,7 @@ const Home = () => {
             component={avatarAnimation2}
             position={[0, -1, 0]}
             rotation={[0, -1.8, 0]}
+            fov={3.5}
           />
         </div>
       </section>

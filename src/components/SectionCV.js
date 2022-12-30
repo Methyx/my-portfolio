@@ -29,7 +29,7 @@ const SectionCV = ({ sectionTitle, itemsArray }) => {
       <div className={sectionVisible ? "contain" : "contain hidden"}>
         {itemsArray.map((item, index) => {
           return (
-            <div className="item">
+            <div className="item" key={index}>
               <div className="logo">
                 <img src={item.logo} alt={item.logoAlt} />
               </div>

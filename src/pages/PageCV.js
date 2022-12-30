@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 // components
 import SectionCV from "../components/SectionCV";
+import MyAvatar from "../components/MyAvatar";
 
 // style
 import "../style/pageCV.css";
@@ -9,6 +10,17 @@ import "../style/pageCV.css";
 const PageCV = () => {
   return (
     <div className="pageCV container">
+      <div className="top">
+        <h4>Télécharger une version PDF : </h4>
+        <Link to="../CV-Philippe_MERCY.docx" target="_blank" download>
+          <MyAvatar
+            component="MyAvatarWriting"
+            position={[-0.8, -0.8, 0]}
+            rotation={[0, 0, 0]}
+            fov={1.2}
+          />
+        </Link>
+      </div>
       <SectionCV
         sectionTitle="Formation"
         itemsArray={[
