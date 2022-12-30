@@ -1,0 +1,61 @@
+.item-portfolio-content h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background-color: var(--darkgreen);
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.item-portfolio {
+  display: flex;
+  gap: 15px;
+  height: 300px;
+  margin: 40px 0;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--darkgreen);
+}
+.item-portfolio .text {
+  width: 50%;
+}
+.item-portfolio .images {
+  width: 50%;
+}
+.item-portfolio .text h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+.item-portfolio .icons {
+  display: flex;
+  margin: 20px 0;
+}
+.item-portfolio .icons img {
+  height: 40px;
+  margin-left: 10px;
+}
+.item-portfolio .icons .react {
+  line-height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 11px;
+}
+.item-portfolio .text .features {
+  padding: 0 15px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.item-portfolio .text a {
+  line-height: 40px;
+  margin-left: 25px;
+}
+
+.item-portfolio .images .carousel-container {
+  width: 100%;
+  height: 100%;
+}
+.item-portfolio .images .carousel-image {
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+}

@@ -1,5 +1,6 @@
 // components
 import MyAvatar from "../components/MyAvatar";
+import ItemPortfolio from "../components/ItemPortfolio";
 
 // style
 import "../style/portfolio.css";
@@ -16,34 +17,109 @@ const Portfolio = () => {
           fov={2.2}
         />
       </div>
-      <div className="item-portfolio">
-        <div className="text">
-          <h2>Site inspiré de Happy Cow</h2>
-          <h3>Projet Full-Stack</h3>
-          <h3>Base de données MongoDB (shops and users)</h3>
-          <div className="icons">
-            <img src={require("../assets/img/html.png")} alt="HTML" />
-            <img src={require("../assets/img/css.png")} alt="CSS" />
-            <img
-              src={require("../assets/img/javascript.png")}
-              alt="javascript"
-            />
-            <img src={require("../assets/img/react.png")} alt="REACT" />
-            <div className="react">
-              <p>React</p>
-            </div>
-            <img src={require("../assets/img/mongodb.png")} alt="MongoDB" />
-          </div>
-          <ul className="features">
-            <li>Connexion / Inscription</li>
-            <li>Recherche avec filtres</li>
-            <li>Gestion de favoris</li>
-            <li>Affichage sur carte</li>
-            <li>Géolocalisation et recherche par distance</li>
-          </ul>
-        </div>
-        <div className="image">toto</div>
-      </div>
+      <ItemPortfolio
+        title="Site inspiré de Happy Cow"
+        subTitle={[
+          "Projet Full-Stack",
+          "Base de données MongoDB (shops and users)",
+        ]}
+        icons={["HTML", "CSS", "JavaScript", "React", "MongoDB"]}
+        features={[
+          "Connexion / Inscription",
+          "Modification du profil utilisateur",
+          "Recherche avec filtres",
+          "Carousel de photos",
+          "Gestion de favoris personnels",
+          "Affichage sur carte",
+          "Géolocalisation et recherche par distance",
+        ]}
+        link="https://main--delicate-smakager-087673.netlify.app/"
+        images={[
+          require("../assets/img/portfolio/HappyCow1.png"),
+          require("../assets/img/portfolio/HappyCow2.png"),
+          require("../assets/img/portfolio/HappyCow3.png"),
+          require("../assets/img/portfolio/HappyCow4.png"),
+          require("../assets/img/portfolio/HappyCow5.png"),
+          require("../assets/img/portfolio/HappyCow6.png"),
+          require("../assets/img/portfolio/HappyCow7.png"),
+        ]}
+        nbImages={1}
+      />
+      <ItemPortfolio
+        title="Site inspiré de MARVEL"
+        subTitle={["Projet Full-Stack", "Back-end de gestion de l'API MARVEL"]}
+        icons={["HTML", "CSS", "JavaScript", "React"]}
+        features={[
+          "Back-end d'interface avec l'API MARVEL",
+          "Recherche avec 'debounce'",
+          "Gestion de favoris via les cookies",
+          "Drag & drop pour le classement des favoris",
+        ]}
+        link="https://incomparable-smakager-5a824a.netlify.app/"
+        images={[
+          require("../assets/img/portfolio/Marvel1.png"),
+          require("../assets/img/portfolio/Marvel2.png"),
+          require("../assets/img/portfolio/Marvel3.png"),
+        ]}
+        nbImages={1}
+      />
+      <ItemPortfolio
+        title="Appli Mobile inspirée de AirBnB"
+        subTitle={["Projet Front", "Application IOS et Android"]}
+        icons={["HTML", "CSS", "JavaScript", "ReactNative"]}
+        features={[
+          "Connexion / Inscription",
+          "Affichage de cartes",
+          "Géolocalisation",
+          "Accès à la galerie d'images",
+          "Accès à l'appareil photo",
+        ]}
+        link=""
+        images={[
+          require("../assets/img/portfolio/AirBnB1.png"),
+          require("../assets/img/portfolio/AirBnB2.png"),
+          require("../assets/img/portfolio/AirBnB3.png"),
+          require("../assets/img/portfolio/AirBnB4.png"),
+        ]}
+        nbImages={2}
+      />
+      <ItemPortfolio
+        title="Site inspiré de VINTED"
+        subTitle={[
+          "Projet Full-Stack",
+          "Base de données MongoDB (users and offers)",
+        ]}
+        icons={["HTML", "CSS", "JavaScript", "React", "MongoDB"]}
+        features={[
+          "Connexion / Inscription",
+          "Publication d'annonces",
+          "Upload de photos",
+          "Barre de recherche avec filtres",
+          "Paiement CB avec Stripe",
+        ]}
+        link="https://soft-meerkat-9657bf.netlify.app/"
+        images={[
+          require("../assets/img/portfolio/Vinted1.png"),
+          require("../assets/img/portfolio/Vinted2.png"),
+          require("../assets/img/portfolio/Vinted3.png"),
+          require("../assets/img/portfolio/Vinted4.png"),
+          require("../assets/img/portfolio/Vinted5.png"),
+        ]}
+        nbImages={1}
+      />
+      <ItemPortfolio
+        title="Site inspiré de DELIVEROO"
+        subTitle={["Projet Front"]}
+        icons={["HTML", "CSS", "JavaScript", "React"]}
+        features={[
+          "Récupération de données",
+          "Affichage des plats par catégorie",
+          "Gestion d'un panier d'achat",
+        ]}
+        link=""
+        images={[require("../assets/img/portfolio/Deliveroo1.png")]}
+        nbImages={1}
+      />
     </div>
   );
 };
