@@ -10,17 +10,23 @@ import "../style/pageCV.css";
 const PageCV = () => {
   return (
     <div className="pageCV container">
-      <div className="top">
-        <h4>Télécharger une version PDF : </h4>
-        <Link to="../CV-Philippe_MERCY.docx" target="_blank" download>
+      <h1>Mon Parcours</h1>
+      <Link
+        to="../CV-Philippe_MERCY.docx"
+        target="_blank"
+        download
+        className="top"
+      >
+        <h4>Télécharger un CV en version PDF</h4>
+        <div className="avatar">
           <MyAvatar
             component="MyAvatarWriting"
             position={[-0.8, -0.8, 0]}
             rotation={[0, 0, 0]}
             fov={1.2}
           />
-        </Link>
-      </div>
+        </div>
+      </Link>
       <SectionCV
         sectionTitle="Formation"
         itemsArray={[

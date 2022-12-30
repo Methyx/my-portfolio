@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 // component
 import MyAvatar from "../components/MyAvatar";
+import AboutMe from "../components/AboutMe";
 
 // style
 import "../style/home.css";
@@ -45,13 +46,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="resume">
-        <p>
-          Au travers de mes 30 ans d'expériences commerciales, marketing et de
-          gestion de projets, j'ai acquis un sens aigu de la compréhension et de
-          la satisfaction du besoin des "clients" (au sens large).
-        </p>
-      </div>
+      <AboutMe />
       <section
         className="cv-section"
         onMouseEnter={() => {
