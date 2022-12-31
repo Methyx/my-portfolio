@@ -103,3 +103,33 @@ header .left .underlined {
     display: none;
   }
 }
+
+@media (max-width: 450px) {
+  header .right img {
+    height: 25px;
+    margin: 0 5px;
+    padding: 5px;
+  }
+  header .left img {
+    margin-top: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  header .left .menu-bars {
+    font-size: 18px;
+    margin-left: 0;
+  }
+  header .menu-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .show-menu-text {
+    height: 250px;
+    align-items: flex-start;
+  }
+  header .left .show-menu-text2 {
+    height: 250px;
+    line-height: 80px;
+  }
+}
