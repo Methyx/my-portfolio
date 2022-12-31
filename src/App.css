@@ -15,6 +15,12 @@ body {
 .container {
   max-width: 1080px;
   margin: 0 auto;
-  /* background-color: rgb(230, 230, 230); */
   background-color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1180px) {
+  .container {
+    margin: 0 30px;
+  }
 }

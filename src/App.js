@@ -16,8 +16,9 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faCircleArrowDown,
   faCircleArrowUp,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
-library.add(faCircleArrowDown, faCircleArrowUp);
+library.add(faCircleArrowDown, faCircleArrowUp, faBars);
 
 function App() {
   return (

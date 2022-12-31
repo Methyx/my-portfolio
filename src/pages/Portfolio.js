@@ -64,7 +64,7 @@ const Portfolio = () => {
         nbImages={1}
       />
       <ItemPortfolio
-        title="Appli Mobile inspirée de AirBnB"
+        title="Application Mobile inspirée de AirBnB"
         subTitle={["Projet Front", "Application IOS et Android"]}
         icons={["HTML", "CSS", "JavaScript", "ReactNative"]}
         features={[

@@ -35,3 +35,13 @@
   height: 0px;
   overflow: hidden;
 }
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  .about-me h5 {
+    font-size: 16px;
+  }
+  .about-me p {
+    font-size: 12px;
+  }
+}
