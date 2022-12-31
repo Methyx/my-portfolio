@@ -10,3 +10,10 @@
   font-weight: 600;
   font-style: italic;
 }
+
+/* RESPONSIVE */
+@media (max-width: 550px) {
+  .portfolio h1 {
+    font-size: 22px;
+  }
+}

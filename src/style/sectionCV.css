@@ -55,3 +55,48 @@
 .sectionCV .item a {
   color: var(--violet);
 }
+
+/* RESPONSIVE */
+@media (max-width: 950px) {
+  .sectionCV .item {
+    height: 150px;
+    margin: 25px 30px;
+  }
+  .sectionCV .item .logo img {
+    width: 80%;
+  }
+  .sectionCV .item .content {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .sectionCV {
+    padding: 20px;
+  }
+  .sectionCV .title {
+    font-size: 18px;
+    padding-left: 0px;
+    justify-content: center;
+    gap: 10px;
+  }
+  .sectionCV .title h1 {
+    font-size: 22px;
+  }
+  .sectionCV .item {
+    flex-direction: column;
+    margin: 5px 15px;
+    height: 300px;
+  }
+  .sectionCV .item .logo {
+    width: 80%;
+    height: 50%;
+  }
+  .sectionCV .item .logo img {
+    width: 80%;
+    height: 80%;
+  }
+  .sectionCV .item .content {
+    width: 100%;
+  }
+}
