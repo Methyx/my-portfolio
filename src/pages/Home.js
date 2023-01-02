@@ -84,6 +84,9 @@ const Home = () => {
           setAvatarAnimation2("MyAvatarLookingAround");
           setPortfolioHighlight(false);
         }}
+        onClick={() => {
+          navigate("/portfolio");
+        }}
       >
         <div className="space"></div>
         <div

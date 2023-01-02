@@ -60,6 +60,8 @@ const Portfolio = () => {
           require("../assets/img/portfolio/Marvel1.png"),
           require("../assets/img/portfolio/Marvel2.png"),
           require("../assets/img/portfolio/Marvel3.png"),
+          require("../assets/img/portfolio/Marvel4.png"),
+          require("../assets/img/portfolio/Marvel5.png"),
         ]}
         nbImages={1}
       />
