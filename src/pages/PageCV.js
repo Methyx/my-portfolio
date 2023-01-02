@@ -12,7 +12,7 @@ const PageCV = () => {
     <div className="pageCV container">
       <h1>Mon Parcours</h1>
       <Link
-        to="../CV-Philippe_MERCY.docx"
+        to="../CV_Philippe_MERCY_2023.pdf"
         target="_blank"
         download
         className="top"
