@@ -23,7 +23,7 @@ const Home = () => {
     <div className="home-page container">
       <div className="title">
         <div className="photo">
-          <img src={require("../assets/img/PM.jpg")} alt="Philippe MERCY" />
+          <img src={require("../assets/img/PM.gif")} alt="Philippe MERCY" />
         </div>
         <div className="text">
           <h1>Philippe MERCY</h1>

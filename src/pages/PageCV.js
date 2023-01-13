@@ -168,7 +168,7 @@ const PageCV = () => {
         sectionTitle="Etat civil et Contact"
         itemsArray={[
           {
-            logo: require("../assets/img/PM.jpg"),
+            logo: require("../assets/img/PM.gif"),
             logoAlt: "Philippe MERCY",
             localisation: "Philippe MERCY",
             title: "55 ans",

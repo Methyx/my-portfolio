@@ -18,6 +18,27 @@ const Portfolio = () => {
         />
       </div>
       <ItemPortfolio
+        title="Site sur les prénoms en France depuis 1900"
+        subTitle={["Projet Full-Stack", "Base de données MongoDB"]}
+        icons={["HTML", "CSS", "JavaScript", "React", "MongoDB"]}
+        features={[
+          "Base de données avec près de 4 000 000 d'items",
+          "Recherche optimisée avec 'aggregate'",
+          "Carte interactive",
+          "Graphiques",
+          "Responsive",
+        ]}
+        link="https://dashing-snickerdoodle-07b993.netlify.app/"
+        images={[
+          require("../assets/img/portfolio/LesPrenoms1.png"),
+          require("../assets/img/portfolio/LesPrenoms2.png"),
+          require("../assets/img/portfolio/LesPrenoms3.png"),
+          require("../assets/img/portfolio/LesPrenoms4.png"),
+          require("../assets/img/portfolio/LesPrenoms5.png"),
+        ]}
+        nbImages={1}
+      />
+      <ItemPortfolio
         title="Site inspiré de Happy Cow"
         subTitle={[
           "Projet Full-Stack",
@@ -32,6 +53,7 @@ const Portfolio = () => {
           "Gestion de favoris personnels",
           "Affichage sur carte",
           "Géolocalisation et recherche par distance",
+          "Responsive",
         ]}
         link="https://main--delicate-smakager-087673.netlify.app/"
         images={[
@@ -54,6 +76,7 @@ const Portfolio = () => {
           "Recherche avec 'debounce'",
           "Gestion de favoris via les cookies",
           "Drag & drop pour le classement des favoris",
+          "Responsive",
         ]}
         link="https://incomparable-smakager-5a824a.netlify.app/"
         images={[
@@ -98,6 +121,7 @@ const Portfolio = () => {
           "Upload de photos",
           "Barre de recherche avec filtres",
           "Paiement CB avec Stripe",
+          "Responsive",
         ]}
         link="https://soft-meerkat-9657bf.netlify.app/"
         images={[
