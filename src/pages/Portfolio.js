@@ -18,6 +18,20 @@ const Portfolio = () => {
         />
       </div>
       <ItemPortfolio
+        title="Jeu de cartes Solitaire"
+        subTitle={["Projet Front", "Algorithmie"]}
+        icons={["HTML", "CSS", "JavaScript", "React", "Bootstrap"]}
+        features={[
+          "Drag'n Drop",
+          "BootStrap'",
+          "Composant récursif",
+          "Responsive",
+        ]}
+        link="https://remarkable-twilight-096cd6.netlify.app/"
+        images={[require("../assets/img/portfolio/Solitaire1.png")]}
+        nbImages={1}
+      />
+      <ItemPortfolio
         title="Site sur les prénoms en France depuis 1900"
         subTitle={["Projet Full-Stack", "Base de données MongoDB"]}
         icons={["HTML", "CSS", "JavaScript", "React", "MongoDB"]}

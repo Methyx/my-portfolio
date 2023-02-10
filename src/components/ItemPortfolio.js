@@ -51,6 +51,12 @@ const ItemPortfolio = ({
             {icons.includes("MongoDB") && (
               <img src={require("../assets/img/mongodb.png")} alt="MongoDB" />
             )}
+            {icons.includes("Bootstrap") && (
+              <img
+                src={require("../assets/img/bootstrap.png")}
+                alt="Bootstrap"
+              />
+            )}
           </div>
           <ul className="features">
             {features.map((item, index) => {
