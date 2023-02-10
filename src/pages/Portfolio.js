@@ -28,7 +28,10 @@ const Portfolio = () => {
           "Responsive",
         ]}
         link="https://remarkable-twilight-096cd6.netlify.app/"
-        images={[require("../assets/img/portfolio/Solitaire1.png")]}
+        images={[
+          require("../assets/img/portfolio/Solitaire1.png"),
+          require("../assets/img/portfolio/Solitaire2.png"),
+        ]}
         nbImages={1}
       />
       <ItemPortfolio
