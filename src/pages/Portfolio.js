@@ -16,7 +16,24 @@ const Portfolio = () => {
           rotation={[0, 0, 0]}
           fov={2.2}
         />
-      </div>
+      </div>{" "}
+      <ItemPortfolio
+        title="Site de partage de musique"
+        subTitle={["Projet Front", "CSS 3D"]}
+        icons={["HTML", "CSS", "JavaScript", "React"]}
+        features={[
+          "Player de musique",
+          "3D en CSS",
+          "animations CSS",
+          "Responsive",
+        ]}
+        link="https://luminous-queijadas-dc5793.netlify.app/"
+        images={[
+          require("../assets/img/portfolio/Jukebox1.png"),
+          require("../assets/img/portfolio/Jukebox2.png"),
+        ]}
+        nbImages={1}
+      />
       <ItemPortfolio
         title="Jeu de cartes Solitaire"
         subTitle={["Projet Front", "Algorithmie"]}
