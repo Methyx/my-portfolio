@@ -2,8 +2,9 @@
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  color: white;
-  background-color: var(--darkgreen);
+  color: #606060;
+  text-shadow: 1px 1px 5px var(--brown);
+  background-color: var(--lightgreen);
   padding: 10px 0;
   margin: 10px 0;
 }
@@ -44,10 +45,18 @@
   padding: 0 15px;
   list-style-type: disc;
   list-style-position: inside;
+  margin-bottom: 20px;
 }
 .item-portfolio .text a {
   line-height: 40px;
-  margin-left: 25px;
+  margin-left: calc(50% - 30px);
+  text-decoration: none;
+  background-color: var(--darkgreen);
+  padding: 5px 15px;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid var(--lightbrown);
+  box-shadow: 2px 2px 10px 3px var(--brown);
 }
 
 .item-portfolio .images .carousel-container {

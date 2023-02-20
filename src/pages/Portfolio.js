@@ -24,7 +24,8 @@ const Portfolio = () => {
         features={[
           "Player de musique",
           "3D en CSS",
-          "animations CSS",
+          "Adaptation automatique",
+          "Animations CSS",
           "Responsive",
         ]}
         link="https://luminous-queijadas-dc5793.netlify.app/"
