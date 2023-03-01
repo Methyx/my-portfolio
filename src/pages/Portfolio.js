@@ -158,7 +158,8 @@ const Portfolio = () => {
           "Paiement CB avec Stripe",
           "Responsive",
         ]}
-        link="https://soft-meerkat-9657bf.netlify.app/"
+        // link="https://soft-meerkat-9657bf.netlify.app/"
+        link=""
         images={[
           require("../assets/img/portfolio/Vinted1.png"),
           require("../assets/img/portfolio/Vinted2.png"),
